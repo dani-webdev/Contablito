@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contabilito</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Registro</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <main>
+        <form action="" id="form">
+          <div class="row mt-4">
+            <div class="col">
+              <h1 class="mb-3">contablito</h1>
+              <hr class="my-4" />
+
+              <div class="">
+                <div class="col-sm-6">
+                  <label for="Descipcion" class="form-label">Descipcion</label>
+                  <input type="text" class="form-control" id="Descipcion" />
+                </div>
+
+                <div class="">
+                  <input
+                    type="radio"
+                    id="Compra"
+                    name="fav_language"
+                    value="Compra"
+                  />
+                  <label for="Compra">Compra</label>
+                  <input
+                    type="radio"
+                    id="Venta"
+                    name="fav_language"
+                    value="Venta"
+                  />
+                  <label for="Venta">Venta</label><br>
+                </div>
+
+                <div class="">
+                    <input
+                    type="radio"
+                    id="Basico"
+                    name="iva"
+                    value="Basico"
+                  />
+                  <label for="Basico">Basico</label>
+                  <input
+                    type="radio"
+                    id="Minimo"
+                    name="iva"
+                    value="Minimo"
+                  />
+                  <label for="Minimo">Minimo</label><br>
+                  <input
+                    type="radio"
+                    id="Exento"
+                    name="iva"
+                    value="Exento"
+                  />
+                  <label for="Exento">Exento</label><br>
+                </div>
+
+                <div class="">
+                  <label for="subtotal" class="form-label">subtotal($)</label>
+                  <input type="text" class="" id="subtotal" />
+                </div>
+
+                <button class="btn btn-primary" type="submit" id="ingBtn">
+                  Ingresar
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="js/contablito.js"></script>
+  </body>
 </html>
