@@ -46,33 +46,33 @@
                     type="radio"
                     id="Basico"
                     name="iva"
-                    value="Basico"
+                    value="0.22"
                   />
                   <label for="Basico">Basico</label>
                   <input
                     type="radio"
                     id="Minimo"
                     name="iva"
-                    value="Minimo"
+                    value="0.1"
                   />
                   <label for="Minimo">Minimo</label>
                   <input
                     type="radio"
                     id="Exento"
                     name="iva"
-                    value="Exento"
+                    value="0"
                   />
-                  <label for="Exento">Evento</label><br>
+                  <label for="Exento">Exento</label><br>
+                  
                 </div>
 
                 <div class="">
                   <label for="subtotal" class="form-label">subtotal($)</label>
-                  <input type="text" class="" id="subtotal" />
-                </div>
-
-                <button class="btn btn-primary" type="submit" id="ingBtn">
-                  Ingresar
-                </button>
+                  <input type="number" class="" id="subtotal" />
+                  <button class="btn btn-primary" type="submit" id="ingBtn" >
+                    Ingresar
+                  </button>
+                </div>                
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
       </main>
     </div>
    <br>
-    <table style="width:70%">
+    <table style="width:70%" id="table">
         <tr>
             <th>Descripción</th>
             <th>Tipo</th>
@@ -89,9 +89,11 @@
             <th>Total (IVA inc.)</th>
         </tr>
     </table>
-  <script src="js/contablito.js"></script>
-  
-<p id="tVentas">Total Ventas:</p>
-<p id="tCompras">Total Compras:</p>
+    <br>
+    <div>
+    <p>Total Ventas: <span id="total-ventas">$0</span></p>
+    <p>Total Compras: <span id="total-compras">$0</span></p>
+  </div>
+<script src="js/contablito.js"></script>
   </body>
 </html>
