@@ -7,93 +7,28 @@
     <title>Registro</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
   </head>
 
-  <body class="bg-light">
-    <div class="container">
-      <main>
-        <form action="" id="form">
-          <div class="row mt-4">
-            <div class="col">
-              <h1 class="mb-3">contablito</h1>
-              <hr class="my-4" />
+  <body>
+    <section aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev"><</button>
+        <button class="carousel-button next" data-carousel-button="next">></button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="img/1.jfif">
+          </li>
+          <li class="slide">
+            <img src="https://source.unsplash.com/eOpewngf68w">
+          </li>
+          <li class="slide">
+            <img src="img/1.jfif">
+          </li>
+        </ul>
+      </div>
+    </section>
 
-              <div class="">
-                <div class="col-sm-6">
-                  <label for="Descipcion" class="form-label">Descipcion</label>
-                  <input type="text" class="form-control" id="Descipcion" />
-                </div>
-                Tipo de Transacción
-                  <input 
-                    type="radio"
-                    id="Compra"
-                    name="fav_language"
-                    value="Compra"
-                  />
-                  <label for="Compra">Compra</label>
-                  <input
-                    type="radio"
-                    id="Venta"
-                    name="fav_language"
-                    value="Venta"
-                  />
-                  <label for="Venta">Venta</label><br>
-                </div>
-
-                <div class="">
-                    Tipo IVA
-                    <input
-                    type="radio"
-                    id="Basico"
-                    name="iva"
-                    value="0.22"
-                  />
-                  <label for="Basico">Basico</label>
-                  <input
-                    type="radio"
-                    id="Minimo"
-                    name="iva"
-                    value="0.1"
-                  />
-                  <label for="Minimo">Minimo</label>
-                  <input
-                    type="radio"
-                    id="Exento"
-                    name="iva"
-                    value="0"
-                  />
-                  <label for="Exento">Exento</label><br>
-                  
-                </div>
-
-                <div class="">
-                  <label for="subtotal" class="form-label">subtotal($)</label>
-                  <input type="number" class="" id="subtotal" />
-                  <button class="btn btn-primary" type="submit" id="ingBtn" >
-                    Ingresar
-                  </button>
-                </div>                
-              </div>
-            </div>
-          </div>
-        </form>
-      </main>
-    </div>
-   <br>
-    <table style="width:70%" id="table">
-        <tr>
-            <th>Descripción</th>
-            <th>Tipo</th>
-            <th>Subtotal ($)</th>
-            <th>IVA ($)</th>
-            <th>Total (IVA inc.)</th>
-        </tr>
-    </table>
-    <br>
-    <div>
-    <p>Total Ventas: <span id="total-ventas">$0</span></p>
-    <p>Total Compras: <span id="total-compras">$0</span></p>
-  </div>
 <script src="js/contablito.js"></script>
   </body>
 </html>
